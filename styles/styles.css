@@ -128,23 +128,23 @@ body {
   color: var(--quinary-color);
 }
 
-#home-hometown a:visited,
-#home-tourist a:visited,
-#home-food a:visited {
+#home-hometown a:visited i,
+#home-tourist a:visited i,
+#home-food a:visited i {
   color: var(--quinary-color);
 }
 
-#home-profile a:visited {
+#home-profile a:visited i {
   color: var(--primary-color);
 }
 
-#home-profile a:hover {
+#home-profile a:hover i {
   color: var(--secondary-color);
 }
 
-#home-hometown a:hover,
-#home-tourist a:hover,
-#home-food a:hover {
+#home-hometown a:hover i,
+#home-tourist a:hover i,
+#home-food a:hover i {
   color: var(--muted-color);
 }
 
