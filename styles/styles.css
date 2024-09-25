@@ -355,13 +355,12 @@ body {
 }
 
 .page-hero#home-hero {
-  /* background-image: url("/img/homebg.jpg"); */
   background: linear-gradient(
     to bottom right,
     var(--primary-color),
     var(--secondary-color),
     var(--tertiary-color),
-    var(--quaternary-color) /* var(--quinary-color) */
+    var(--quaternary-color)
   );
 }
 
