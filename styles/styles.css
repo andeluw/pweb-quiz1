@@ -122,14 +122,24 @@ body {
   overflow: hidden;
 }
 
-#home-profile a:hover {
-  color: var(--secondary-color);
-}
-
 #home-hometown a,
 #home-tourist a,
 #home-food a {
   color: var(--quinary-color);
+}
+
+#home-hometown a:visited,
+#home-tourist a:visited,
+#home-food a:visited {
+  color: var(--quinary-color);
+}
+
+#home-profile a:visited {
+  color: var(--primary-color);
+}
+
+#home-profile a:hover {
+  color: var(--secondary-color);
 }
 
 #home-hometown a:hover,
@@ -140,10 +150,6 @@ body {
 
 .home-text-container i:hover {
   cursor: pointer;
-}
-
-.home-text-container a:visited {
-  color: initial;
 }
 
 #home-tourist {
