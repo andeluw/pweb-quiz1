@@ -466,6 +466,7 @@ body {
   overflow: hidden;
   max-width: 100%;
   height: auto;
+  min-height: min-content;
 }
 
 .media-container iframe {
@@ -521,7 +522,7 @@ body {
 
 #hometown-leaders,
 #food-tahucampur {
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
 }
 
 .tourist-image-container {
@@ -550,6 +551,7 @@ body {
 
 .tourist-map-link i {
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .tourist-map-link p {
