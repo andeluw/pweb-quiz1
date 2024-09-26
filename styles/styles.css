@@ -227,7 +227,7 @@ body {
 
 .profile-about {
   padding: 150px 96px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
 }
 
 .profile-about-text {
@@ -258,7 +258,7 @@ body {
 
 .profile-skills {
   padding: 150px 96px;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -319,7 +319,7 @@ body {
 
 .profile-contact {
   padding: 150px 96px 150px 96px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -521,7 +521,7 @@ body {
 
 #hometown-leaders,
 #food-tahucampur {
-  height: 100vh;
+  height: calc(100vh - 100px);
 }
 
 .tourist-image-container {
@@ -581,6 +581,25 @@ body {
   color: var(--secondary-color);
   cursor: pointer;
 }
+
+.footer-container {
+  background-color: var(--secondary-color);
+  color: var(--quinary-color);
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-container p {
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
   .header-logo {
