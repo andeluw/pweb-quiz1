@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   AOS.init();
 
+  const navMenu = document.querySelector(".nav-menu");
+  navMenu.addEventListener("click", function () {
+    const navBar = document.querySelector(".nav-links");
+    navBar.classList.toggle("nav-active");
+  });
+
   const scrollIcon = document.getElementById("scroll-icon");
   if (scrollIcon) {
     scrollIcon.addEventListener("click", function () {
