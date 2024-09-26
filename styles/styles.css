@@ -27,6 +27,8 @@ body {
   color: var(--typo-white);
 }
 
+/* NAVBAR */
+
 .header-container {
   font-family: var(--font-secondary);
   background-color: var(--secondary-color);
@@ -82,6 +84,8 @@ body {
   font-weight: 600;
 }
 
+/* HOMEPAGE */
+
 .home-body-container {
   padding: 80px 96px;
   display: flex;
@@ -106,6 +110,7 @@ body {
   font-style: italic;
   font-family: var(--font-secondary);
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .home-text-container p {
@@ -158,23 +163,25 @@ body {
   margin-bottom: 50px;
 }
 
+/* PROFILE */
+
 .profile-hero {
   min-height: calc(100vh - 100px);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 40px;
   background-color: var(--quaternary-color);
   color: var(--primary-color);
 }
 
-.profile-hero h1 {
+.profile-hero-text h1 {
   font-size: 5rem;
   font-weight: 900;
   font-family: var(--font-secondary);
 }
 
-.profile-hero h2 {
+.profile-hero-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: var(--font-primary);
@@ -189,7 +196,7 @@ body {
   margin-top: 24px;
 }
 
-.profile-hero p {
+.profile-hero-text p {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.5;
@@ -197,7 +204,7 @@ body {
   margin-top: 8px;
 }
 
-.profile-hero button {
+.profile-hero-text button {
   padding: 1rem 2rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -210,7 +217,7 @@ body {
   transition: 0.3s ease-in-out;
 }
 
-.profile-hero button:hover {
+.profile-hero-text button:hover {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
   cursor: pointer;
@@ -309,7 +316,7 @@ body {
 }
 
 .profile-contact {
-  padding: 150px 96px 200px 96px;
+  padding: 150px 96px 150px 96px;
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
@@ -342,6 +349,8 @@ body {
   color: var(--muted-color);
   cursor: pointer;
 }
+
+/* HOMETOWN, FOOD, TOURIST */
 
 .page-hero {
   position: relative;
@@ -399,13 +408,17 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.page-hero h1 {
+.page-hero-text {
+  max-width: 80%;
+}
+
+.page-hero-text h1 {
   font-size: 4rem;
   font-weight: 900;
   font-family: var(--font-secondary);
 }
 
-.page-hero p {
+.page-hero-text p {
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.5;
@@ -413,20 +426,20 @@ body {
   font-family: var(--font-primary);
 }
 
-.page-hero i {
+.page-hero-text i {
   font-size: 50px;
   margin-top: 24px;
   overflow: hidden;
 }
 
-.page-hero h1,
-.page-hero p,
-.page-hero i {
+.page-hero-text h1,
+.page-hero-text p,
+.page-hero-text i {
   position: relative;
   z-index: 2;
 }
 
-.page-hero i:hover {
+.page-hero-text i:hover {
   cursor: pointer;
   color: var(--quaternary-color);
 }
@@ -437,9 +450,15 @@ body {
   gap: 3rem;
   align-items: center;
   overflow: hidden;
+  min-height: min-content;
 }
 
-.body-container img {
+.tourist-image-container {
+  min-height: min-content;
+}
+
+.media-container img,
+.tourist-image-container img {
   border-radius: 12px;
   object-fit: cover;
   overflow: hidden;
@@ -447,8 +466,16 @@ body {
   height: auto;
 }
 
+.media-container iframe {
+  border-radius: 12px;
+  object-fit: cover;
+  overflow: hidden;
+  max-width: 100%;
+}
+
 .text-container {
   width: 65%;
+  min-height: min-content;
 }
 
 .text-container h2 {
@@ -491,8 +518,7 @@ body {
 }
 
 #hometown-leaders,
-#food-tahucampur,
-#tourist-kyakya {
+#food-tahucampur {
   height: 100vh;
 }
 
@@ -554,8 +580,160 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .skill-card {
-    width: 150px;
+@media screen and (max-width: 768px) {
+  .home-text-container {
+    max-width: 85%;
+  }
+
+  .home-text-container h2 {
+    font-size: 3rem;
+  }
+
+  .profile-hero-text {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .profile-hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .profile-hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .profile-hero-text p {
+    font-size: 1rem;
+  }
+
+  .profile-hero img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .profile-hero-text button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .profile-about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .profile-about-text p {
+    font-size: 1.1rem;
+  }
+
+  .profile-skills h2 {
+    font-size: 2.5rem;
+  }
+
+  .skill-card p {
+    font-size: 1rem;
+  }
+
+  .profile-contact h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-card-container i {
+    font-size: 2.5rem;
+  }
+
+  .page-hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-hero-text p {
+    font-size: 1rem;
+  }
+
+  .page-hero-text i {
+    font-size: 40px;
+  }
+
+  .home-body-container {
+    padding: 100px 24px;
+  }
+
+  .body-container {
+    gap: 2rem;
+    padding: 50px 24px;
+  }
+
+  .media-container,
+  .tourist-image-container {
+    max-width: 90%;
+    align-self: center;
+  }
+
+  .media-container img,
+  .tourist-image-container img {
+    min-height: 300px;
+    max-height: 350px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-text-container {
+    max-width: 80%;
+  }
+
+  .profile-about,
+  .profile-skills {
+    padding: 100px 24px;
+  }
+
+  .profile-contact {
+    padding: 200px 24px;
+  }
+
+  .profile-hero {
+    padding: 100px 24px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .page-hero-text br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-text-container h2 {
+    font-size: 4rem;
+  }
+
+  .home-text-container p {
+    font-size: 1.5rem;
+  }
+
+  .home-text-container i {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .body-container {
+    padding: 80px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .media-container,
+  .tourist-image-container {
+    max-width: 80%;
+    order: 1;
+    align-self: center;
+  }
+
+  .text-container {
+    width: 80%;
+    text-align: center;
+    order: 2;
   }
 }
